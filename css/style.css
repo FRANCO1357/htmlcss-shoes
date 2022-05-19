@@ -1,5 +1,84 @@
+/* scroll effect */
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+/* reset */
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* sezioni scarpe */
+
+.shoe{
+    height: 100vh;
+    position: relative;
+}
+
+img{
+    height: 500px;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2{
+    margin: 0;
+}
+
+.first{
+    background-color: red;
+    color: yellow;
+}
+
+.second{
+    background-color: green;
+    color: yellow;
+}
+
+.third{
+    background-color: yellow;
+    color: green;
+}
+
+/* barra di navigazione */
+
+nav{
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    margin: 0 15px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgb(35, 35, 35);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
 }
